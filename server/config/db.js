@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose
-	.connect(`mongodb+srv://${process.env.DB_USER_PASS}@unpetitverdot.k3synfu.mongodb.net/`, {
+	.connect(`mongodb+srv://${process.env.DB_USER_PASS}@unpetitverdot.k3synfu.mongodb.net/?retryWrites=true&w=majority`, {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
 	})

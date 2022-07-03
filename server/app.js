@@ -19,7 +19,7 @@ const app = express();
 
 app.use(corsOptions);
 app.use(helmet());
-app.use(express.json({ json: { limit: "50mb", extended: true }, urlencoded: { limit: "50mb", extended: true } }));
+app.use(express.json());
 app.use(cookieParser());
 
 // token;

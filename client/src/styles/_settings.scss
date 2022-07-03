@@ -1,3 +1,50 @@
-h1 {
-	color: red;
+// fonts
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	list-style: none;
+	list-style-type: none;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	font-family: "Noto Sans", sans-serif;
+}
+
+$upv-primary: #311013;
+$upv-secondary: #132c23;
+$upv-tertiary: #947d50;
+$upv-quaternary: #222222;
+// $upv-quinary:
+// $upv-senary:
+
+$upv-gray-00: #f5f6f7;
+$upv-gray-05: #f2f3f5;
+$upv-gray-10: #ebedf0;
+$upv-gray-20: #dadde1;
+$upv-gray-25: #ccd0d5;
+$upv-gray-30: #bec3c9;
+$upv-gray-45: #8d949e;
+$upv-gray-70: #606770;
+$upv-gray-80: #444950;
+$upv-gray-90: #303338;
+$upv-gray-100: #1c1e21;
+
+// mixins
+@mixin mobile-breakpoint {
+	@media (max-width: 550px) {
+		@content;
+	}
+}
+@mixin tablet-breakpoint {
+	@media (max-width: 900px) {
+		@content;
+	}
+}
+@mixin desktop-breakpoint {
+	@media (max-width: 1200px) {
+		@content;
+	}
 }
